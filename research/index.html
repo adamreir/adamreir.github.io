@@ -26,53 +26,51 @@
 
       <div class="section-heading">Ongoing Research</div>
 
-      <div class="paper">
+      <div class="paper-card">
         <div class="paper-title">Field of Study, Comparative Advantage, and College Admission Policies</div>
         <div class="paper-authors"><strong>Adam Reiremo</strong></div>
+        <div class="paper-abstract" id="abs-1">This paper studies how applicants with identical GPAs differ in their field-specific competencies. Using regression discontinuity methods at Norwegian college admission thresholds, I examine how mathematical and language skills from secondary education affect graduation rates, time to completion, and post-graduation earnings. I find that students with stronger mathematical preparation benefit disproportionately from STEM enrollment, and I simulate policy reforms that assign applicants to fields based on comparative skill profiles.</div>
         <div class="paper-links">
-          <button class="btn btn-abstract" onclick="toggleAbstract(this)">Abstract</button>
+          <button class="pill-btn" onclick="toggleAbstract('abs-1', this)">Abstract</button>
         </div>
-        <div class="paper-abstract">This paper studies how applicants with identical GPAs differ in their field-specific competencies. Using regression discontinuity methods at Norwegian college admission thresholds, I examine how mathematical and language skills from secondary education affect graduation rates, time to completion, and post-graduation earnings. I find that students with stronger mathematical preparation benefit disproportionately from STEM enrollment, and I simulate policy reforms that assign applicants to fields based on comparative skill profiles.</div>
       </div>
 
       <hr>
 
       <div class="section-heading">Working Papers</div>
 
-      <div class="paper">
+      <div class="paper-card">
         <div class="paper-title">The Anatomy of Mismatch in the College Market</div>
         <div class="paper-authors"><strong>Adam Reiremo</strong></div>
+        <div class="paper-abstract" id="abs-2">Using Norwegian administrative records spanning two decades, I document trends in college-to-job mismatch and decompose overall mismatch into structural, geographic, and within-location assignment components. Approximately one-fifth of degree holders experience mismatch, with the within-location assignment component accounting for more than two-thirds of total mismatch.</div>
         <div class="paper-links">
-          <button class="btn btn-abstract" onclick="toggleAbstract(this)">Abstract</button>
-          <a href="#" class="btn btn-paper" target="_blank">Working Paper</a>
+          <button class="pill-btn" onclick="toggleAbstract('abs-2', this)">Abstract</button>
         </div>
-        <div class="paper-abstract">Using Norwegian administrative records spanning two decades, I document trends in college-to-job mismatch and decompose overall mismatch into structural, geographic, and within-location assignment components. Approximately one-fifth of degree holders experience mismatch, with the within-location assignment component accounting for more than two-thirds of total mismatch.</div>
       </div>
 
-      <div class="paper">
+      <div class="paper-card">
         <div class="paper-title">The Pay and Non-Pay Content of Job Ads</div>
         <div class="paper-authors"><strong>Adam Reiremo</strong>, Richard Audoly, and Manudeep Bhuller</div>
-        <div class="paper-venue"><em>American Economic Review</em>, revise &amp; resubmit</div>
+        <div class="paper-venue">R&amp;R &middot; <em>American Economic Review</em></div>
+        <div class="paper-abstract" id="abs-3">We analyze employer vacancy postings in the Norwegian labor market, developing frameworks to classify advertised compensation and non-compensation content. Using revealed preference estimation from job transitions, we find that approximately 55% of ads include pay information, nearly all mention non-pay attributes, and advertised job characteristics meaningfully predict employer ranking.</div>
         <div class="paper-links">
-          <button class="btn btn-abstract" onclick="toggleAbstract(this)">Abstract</button>
-          <a href="#" class="btn btn-paper" target="_blank">Working Paper</a>
+          <button class="pill-btn" onclick="toggleAbstract('abs-3', this)">Abstract</button>
+          <a href="https://arxiv.org/abs/2407.13204" class="pill-btn" target="_blank">Working Paper</a>
         </div>
-        <div class="paper-abstract">We analyze employer vacancy postings in the Norwegian labor market, developing frameworks to classify advertised compensation and non-compensation content. Using revealed preference estimation from job transitions, we find that approximately 55% of ads include pay information, nearly all mention non-pay attributes, and advertised job characteristics meaningfully predict employer ranking.</div>
       </div>
 
       <hr>
 
       <div class="section-heading">Published Papers</div>
 
-      <div class="paper">
+      <div class="paper-card">
         <div class="paper-title">Reproducibility and Robustness of Economics and Political Science Research</div>
         <div class="paper-authors"><strong>Adam Reiremo</strong> and 350 co-authors</div>
         <div class="paper-venue"><em>Nature</em></div>
+        <div class="paper-abstract" id="abs-4">A large-scale computational reproduction of 110 peer-reviewed articles from leading economics and political science journals. More than 85% of published claims were computationally reproducible, and 72% of findings replicated in terms of statistical significance.</div>
         <div class="paper-links">
-          <button class="btn btn-abstract" onclick="toggleAbstract(this)">Abstract</button>
-          <a href="#" class="btn btn-paper" target="_blank">Published Paper</a>
+          <button class="pill-btn" onclick="toggleAbstract('abs-4', this)">Abstract</button>
         </div>
-        <div class="paper-abstract">A large-scale computational reproduction of 110 peer-reviewed articles from leading economics and political science journals. More than 85% of published claims were computationally reproducible, and 72% of findings replicated in terms of statistical significance.</div>
       </div>
 
     </main>
@@ -86,10 +84,10 @@
   </div>
 
   <script>
-    function toggleAbstract(btn) {
-      const abstract = btn.closest('.paper').querySelector('.paper-abstract');
-      const open = abstract.classList.toggle('open');
-      btn.classList.toggle('active', open);
+    function toggleAbstract(id, btn) {
+      const el = document.getElementById(id);
+      el.classList.toggle('open');
+      btn.textContent = el.classList.contains('open') ? 'Hide abstract' : 'Abstract';
     }
   </script>
 </body>
