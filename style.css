@@ -46,13 +46,15 @@ header {
   font-weight: 700;
   letter-spacing: -0.3px;
   color: #1a1a1a;
+  line-height: 1;
+  margin-bottom: 5px;
 }
 
 .site-position {
   font-size: 1em;
   color: #666;
-  margin-top: 2px;
-  line-height: 1.6;
+  line-height: 1;
+  margin-bottom: 5px;
 }
 
 nav {
