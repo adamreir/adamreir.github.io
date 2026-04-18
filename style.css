@@ -20,13 +20,20 @@ body {
 
 header {
   background: #f2f2f2;
-  padding: 20px 0;
+  padding: 28px 0;
 }
 
 .header-inner {
   max-width: 1050px;
   margin: 0 auto;
   padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header-identity {
+  /* name + position, left side */
 }
 
 .container {
@@ -36,38 +43,41 @@ header {
 }
 
 .site-name {
-  font-size: 1.9em;
+  font-size: 2.3em;
   font-weight: 700;
   letter-spacing: -0.3px;
   color: #1a1a1a;
 }
 
 .site-position {
-  font-size: 0.95em;
+  font-size: 1em;
   color: #666;
-  margin-top: 1px;
-  line-height: 1.2;
+  margin-top: 8px;
+  line-height: 1.6;
 }
 
 nav {
-  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  padding-top: 6px;
 }
 
 nav a {
-  display: inline-block;
+  display: block;
   color: #1a1a1a;
   text-decoration: none;
-  font-size: 0.95em;
-  margin-right: 22px;
+  font-size: 1em;
 }
 
-nav a:hover,
-nav a.active {
+nav a:hover {
   color: #cc5500;
 }
 
 nav a.active {
-  font-weight: 600;
+  color: #cc5500;
+  text-decoration: underline;
 }
 
 /* ── Dividers ── */
