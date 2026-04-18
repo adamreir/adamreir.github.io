@@ -20,7 +20,7 @@ body {
 
 header {
   background: #f2f2f2;
-  padding: 14px 0;
+  padding: 20px 0;
 }
 
 .header-inner {
@@ -47,14 +47,14 @@ header {
   letter-spacing: -0.3px;
   color: #1a1a1a;
   line-height: 1;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
 }
 
 .site-position {
   font-size: 1em;
   color: #666;
   line-height: 1;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
 }
 
 nav {
