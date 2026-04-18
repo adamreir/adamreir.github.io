@@ -28,8 +28,9 @@ header {
   margin: 0 auto;
   padding: 0 24px;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 80px;
 }
 
 .header-identity {
@@ -52,14 +53,13 @@ header {
 .site-position {
   font-size: 1em;
   color: #666;
-  margin-top: 8px;
+  margin-top: 2px;
   line-height: 1.6;
 }
 
 nav {
   display: flex;
   align-items: center;
-  align-self: center;
   gap: 24px;
 }
 
