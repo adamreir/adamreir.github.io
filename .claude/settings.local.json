@@ -6,6 +6,8 @@
       "WebFetch(domain:raw.githubusercontent.com)",
       "WebFetch(domain:github.com)",
       "Bash(python3 -c \"import json,sys; [print\\(f['name']\\) for f in json.load\\(sys.stdin\\)]\")",
+      "Bash(curl -sL \"https://florentineoliveira.github.io/research.html\")",
+      "Bash(curl -sL \"https://adamreir.com/\")"
     ]
   }
 }
