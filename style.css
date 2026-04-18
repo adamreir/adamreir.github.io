@@ -113,30 +113,26 @@ hr {
   border-top: 1px solid #ddd;
 }
 
+.paper-headline {
+  margin-bottom: 4px;
+}
+
 .paper-title {
   font-weight: 600;
   color: #1a1a1a;
-  margin-bottom: 4px;
 }
 
 .paper-authors {
   font-size: 0.88em;
   color: #666;
-  margin-bottom: 4px;
+  font-weight: 400;
 }
 
 .paper-venue {
-  font-size: 0.78em;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #cc5500;
-  font-weight: 500;
+  font-size: 0.88em;
+  color: #666;
+  font-weight: 400;
   margin-bottom: 10px;
-}
-
-.paper-venue em {
-  font-style: italic;
-  text-transform: none;
 }
 
 .paper-abstract {
