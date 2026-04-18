@@ -19,7 +19,7 @@ body {
 .container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 48px 24px;
+  padding: 20px 24px 48px;
 }
 
 /* ── Header ── */
@@ -34,7 +34,8 @@ body {
 .site-position {
   font-size: 0.95em;
   color: #666;
-  margin-top: 4px;
+  margin-top: 1px;
+  line-height: 1.2;
 }
 
 nav {
