@@ -266,6 +266,16 @@ footer a:hover {
 @media (max-width: 680px) {
   .header-inner {
     padding: 0 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  nav {
+    flex: none;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px 20px;
   }
 
   .about-grid {
