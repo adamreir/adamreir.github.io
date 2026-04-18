@@ -163,19 +163,20 @@ hr {
   font-weight: 400;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding: 3px 12px;
+  padding: 5px 16px;
   border-radius: 100px;
-  border: 1px solid #ccc;
+  border: 1px solid #bbb;
   background: none;
   color: #666;
   cursor: pointer;
   text-decoration: none;
-  transition: border-color 0.18s, color 0.18s;
+  transition: border-color 0.18s, color 0.18s, background 0.18s;
 }
 
 .pill-btn:hover {
-  border-color: #cc5500;
-  color: #cc5500;
+  border-color: #555;
+  color: #333;
+  background: #f2f2f2;
 }
 
 /* ── Contact page ── */
