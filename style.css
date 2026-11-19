@@ -113,12 +113,56 @@ hr {
 
 /* ── Job market paper block (front page) ── */
 
-.jmp-section {
-  margin-top: 40px;
+hr.jmp-rule {
+  margin: 36px 0 24px;
 }
 
-.jmp-card .paper-authors {
-  display: block;
+.section-heading.jmp-section {
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.jmp-title {
+  font-size: 1.2em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.jmp-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.jmp-title a:hover {
+  color: #cc5500;
+}
+
+.jmp-authors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 32px;
+  row-gap: 2px;
+  margin: 6px 0 14px;
+}
+
+.jmp-authors a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid #bbb;
+}
+
+.jmp-authors a:hover {
+  color: #cc5500;
+  border-bottom-color: #cc5500;
+}
+
+.jmp-text,
+.jmp-notes {
+  text-align: justify;
+  hyphens: auto;
 }
 
 .jmp-text {
@@ -135,7 +179,7 @@ hr {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
-  max-width: 560px;
+  max-width: 720px;
   margin: 8px auto 0;
 }
 
@@ -160,12 +204,6 @@ hr {
   line-height: 1.6;
   color: #555;
   margin-top: 8px;
-}
-
-@media (max-width: 640px) {
-  .jmp-figures {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* ── Research page ── */
